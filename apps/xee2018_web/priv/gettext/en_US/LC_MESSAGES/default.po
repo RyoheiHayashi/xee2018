@@ -1,0 +1,53 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: en\n"
+
+#: lib/xee2018_web/templates/page/app.html.eex:2
+msgid "XEE.JP"
+msgstr "XEE.JP"
+
+msgid "en_US"
+msgstr "ja_JP"
+
+msgid "English"
+msgstr "日本語"
+
+#: lib/xee2018_web/templates/page/index.html.eex:2
+msgid "Welcome to %{name}!"
+msgstr "Welcome to %{name}!"
+
+msgid "Please enter an experiment code here..."
+msgstr "Please enter an experiment code here..."
+
+msgid "For Teachers"
+msgstr "For Teachers"
+
+msgid "Sign up"
+msgstr "Sign up"
+
+msgid "Guide"
+msgstr "Guide"
+
+msgid "About XEE.JP"
+msgstr "About XEE.JP"
+
+msgid "Sign in"
+msgstr "Sign in"
+
+msgid "New experiment"
+msgstr "New experiment"
+
+msgid "Experiments list"
+msgstr "Experiments list"
+
+msgid "Sign out"
+msgstr "Sign out"
+

@@ -1,0 +1,35 @@
+<h2>Listing Users</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>User Name</th>
+      <th>Inserted</th>
+      <th>Updated</th>
+      <th>Made experiments #</th>
+      <th>Login #</th>
+      <th>Configure</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for user <- @users do %>
+    <tr>
+      <td><%= user.id %></td>
+      <td><%= user.uname %></td>
+      <td><%= Timex.local(user.inserted_at) |> Timex.format!("%Y-%m-%d %H:%M", :strftime) %></td>
+      <td><%= Timex.local(user.updated_at) |> Timex.format!("%Y-%m-%d %H:%M", :strftime) %></td>
+      <td><%= user.login_count %></td>
+      <td><%= user.made_experiments_count %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: user_path(@conn, :show, user), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: user_path(@conn, :edit, user), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: user_path(@conn, :delete, user), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New User", to: user_path(@conn, :new) %></span>
