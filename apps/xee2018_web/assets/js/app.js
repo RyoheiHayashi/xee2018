@@ -19,3 +19,9 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Top from './Top';
+
+ReactDOM.render(<Top />, document.getElementById('root'));
