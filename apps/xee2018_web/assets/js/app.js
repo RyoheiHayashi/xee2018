@@ -23,5 +23,12 @@ import "phoenix_html"
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Top from './Top';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-ReactDOM.render(<Top />, document.getElementById('root'));
+const App = () => (
+  <MuiThemeProvider>
+    <Top />
+  </MuiThemeProvider>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
